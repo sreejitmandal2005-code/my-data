@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  color: white;
+  background: black;
+  overflow-x: hidden;
+}
+
+/* 🌌 Stars Background */
+.stars {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.transparenttextures.com/patterns/stardust.png");
+  animation: moveStars 50s linear infinite;
+  z-index: -1;
+}
+
+@keyframes moveStars {
+  from {background-position: 0 0;}
+  to {background-position: 1000px 1000px;}
+}
+
+/* 🔘 Menu */
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.menu {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  background: rgba(0,0,0,0.9);
+  padding: 10px;
+  display: none;
+  border-radius: 10px;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: cyan;
+}
+
+/* Sections */
+.section {
+  min-height: 100vh;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* Profile */
+.profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid cyan;
+  margin-bottom: 20px;
+}
+
+/* Certificates */
+.cert-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cert-container img {
+  width: 200px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.cert-container img:hover {
+  transform: scale(1.1);
+}
+
+/* Fullscreen Image */
+#popup {
+  position: fixed;
+  display: none;
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#popup img {
+  width: 80%;
+}
+
+/* Box */
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.box p {
+  padding: 10px 20px;
+  border: 1px solid cyan;
+  border-radius: 20px;
+}
+
+/* Contact */
+.contact-icons a {
+  font-size: 40px;
+  margin: 20px;
+  color: white;
+}
+
+.contact-icons a:hover {
+  color: cyan;
+}
+
+/* 📱 Mobile Responsive */
+@media(max-width: 600px) {
+  .cert-container img {
+    width: 90%;
+  }
+}
+
+
+.project {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid cyan;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.project:hover {
+  background: cyan;
+  color: black;
+  transform: scale(1.1);
+}
+.cert-item {
+  text-align: center;
+}
+
+.cert-item p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: cyan;
+}

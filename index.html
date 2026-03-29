@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sreejit Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- 🌌 Animated Background -->
+<div class="stars"></div>
+
+<!-- 🔘 3 Dot Menu -->
+<div class="menu-btn" onclick="toggleMenu()">⋮</div>
+
+<div class="menu" id="menu">
+  <a href="#about">About</a>
+  <a href="#certificates">Certificates</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#hobbies">Hobbies</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- 👤 About -->
+<section id="about" class="section">
+  <img src="01.jpeg" class="profile">
+  <h1>Sreejit Mandal</h1>
+  <p>
+Hi, I’m <strong>Sreejit Mandal</strong>, currently pursuing a Bachelor of Computer Applications (BCA) at Don Bosco College, Panjim, Goa. 
+I am deeply passionate about web development and love designing and developing interactive, <br>responsive websites.
+<br>
+My interests lie in technology and creative digital work, including photography, videography, and editing. <br>
+I enjoy blending creativity with technical skills to create visually appealing and functional projects.
+<br>
+I am always eager to learn new technologies, improve my skills, and take on challenges that help me grow both personally and professionally.
+</p>
+
+<!-- 📜 Certificates -->
+<section id="certificates" class="section">
+  <h2>Certificates</h2>
+
+  <div class="cert-container">
+
+    <div class="cert-item">
+      <img src="c1.jpeg" onclick="openImage(this)">
+      <p>Web Development Certification</p>
+    </div>
+
+    <div class="cert-item">
+      <img src="c2.jpeg" onclick="openImage(this)">
+      <p>Python Programming Certificate</p>
+    </div>
+
+    <div class="cert-item">
+      <img src="c3.jpeg" onclick="openImage(this)">
+      <p>Data Analysis Course</p>
+    </div>
+
+    <div class="cert-item">
+      <img src="c4.jpeg" onclick="openImage(this)">
+      <p>Web Development Certification</p>
+    </div>
+
+    <div class="cert-item">
+      <img src="c5.jpeg" onclick="openImage(this)">
+      <p>Python Programming Certificate</p>
+    </div>
+
+    <div class="cert-item">
+      <img src="c6.jpeg" onclick="openImage(this)">
+      <p>Data Analysis Course</p>
+    </div>
+
+    <div class="cert-item">
+      <img src="c7.jpeg" onclick="openImage(this)">
+      <p>Web Development Certification</p>
+    </div>
+
+    <div class="cert-item">
+      <img src="c8.jpeg" onclick="openImage(this)">
+      <p>Python Programming Certificate</p>
+    </div>
+
+    <div class="cert-item">
+      <img src="c9.jpeg" onclick="openImage(this)">
+      <p>Data Analysis Course</p>
+    </div>
+
+    <div class="cert-item">
+      <img src="c10.jpeg" onclick="openImage(this)">
+      <p>Data Analysis Course</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- 💻 Skills -->
+<section id="skills" class="section">
+  <h2>Skills</h2>
+  <div class="box">
+<p>HTML</p>
+<p>CSS</p>
+<p>Python</p>
+<p>C Programming</p>
+<p>Database Management</p>
+<p>GitHub</p>
+<p>Microsoft Word </p>
+<p>Microsoft Excel </p>
+<p>Microsoft PowerPoint </p>
+<p>Basic Web Development</p>
+<p>Adobe Photoshop</p>
+<p>Adobe Lightroom</p>
+<p>CapCut</p>
+<p>Canva</p>
+<p>Portrait Photography</p>
+<p>Landscape Photography</p>
+<p>Product Photography</p>
+<p>Photo Editing</p>
+<p>Video Shooting</p>
+<p>Camera Handling</p>
+<p>Cinematography Basics</p>
+<p>Lighting Setup</p>
+<p>Video Editing</p>
+
+  </div>
+</section>
+
+<!-- 🚀 Projects -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="box">
+
+    <a href="https://your-portfolio-link.com" target="_blank" class="project">
+      🌐 Portfolio Website
+    </a>
+
+    <a href="https://small-business-mu.vercel.app/" target="_blank" class="project">
+      🛒 small business Website
+    </a>
+
+    <a href="https://your-rank-analysis.com" target="_blank" class="project">
+     📷MY Photos 
+    </a>
+
+  </div>
+</section>
+
+<!-- 🎯 Hobbies -->
+<section id="hobbies" class="section">
+  <h2>Hobbies</h2>
+  <div class="box">
+    <p>🎮 Gaming</p>
+    <p>🎧 Music</p>
+    <p>💻 Coding</p>
+    <p>📷 Photography</p>
+    <p>📷 Videography</p>
+    <p>✂️ Photo & Video Editing</p>
+  </div>
+</section>
+
+<!-- 📞 Contact -->
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+
+  <div class="contact-icons">
+    <a href="https://wa.me/9168392740" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://instagram.com/_.sreejit._7" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </div>
+</section>
+
+<!-- 🔍 Fullscreen Certificate -->
+<div id="popup" onclick="closeImage()">
+  <img id="popup-img">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
