@@ -191,3 +191,19 @@ body {
   text-align: center;
   padding: 80px 20px; /* changed from 50px to 80px */
 }
+
+/* 🔻 Footer */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  backdrop-filter: blur(5px);
+  border-top: 1px solid cyan;
+}
+
+.footer p {
+  font-size: 14px;
+  color: cyan;
+}
